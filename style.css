@@ -17,6 +17,9 @@
     --black: #fff;
     --white: #000;
 }
+a:link {
+    text-decoration: none;
+  }
 
 header {
     position: absolute;
@@ -26,6 +29,7 @@ header {
     width: 100%;
     padding: 40px 100px;
     z-index: 10000;
+    
 }
 
 header .logo {
@@ -33,7 +37,7 @@ header .logo {
     display: inline-flex;
     color: var(--black);
     text-decoration: none;
-    font-size: 2em;
+    font-size: 5em;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -42,7 +46,21 @@ header .logo {
 .rightSide {
     display: flex;
 }
-
+.btn{
+    cursor: pointer;
+    width: 16.5vw;
+    height: 5.6vh;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #3a43ae2b;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid white;
+    font-family: 'Unbounded', cursive;
+    transition: all 0.4s ease-in-out;
+    letter-spacing: 2px;
+}
 .btns {
     position: relative;
     width: 40px;
@@ -117,8 +135,8 @@ header .logo {
     top: 0;
     z-index: 3;
     font-size: 6.8rem;
-    color: cyan;
-    text-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    color: rgb(0, 0, 0);
+    /* text-shadow: 0 20px 30px rgba(0, 0, 0, 0.6); */
 }
 
 .main .heading h3 {
@@ -143,10 +161,20 @@ header .logo {
     z-index: 4;
     transition: 0.5%;
 }
-
-.navigation.active {
-    left: 0;
+.navi{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 3;
+    font-size: 6.8rem;
+    color: rgb(0, 0, 0);
 }
+
+/* .navigation.active {
+    left: 0;
+} */
 
 .navigation li {
     list-style: none;
